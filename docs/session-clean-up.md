@@ -60,6 +60,22 @@ Reply with which numbers to remove ("all", "1-4", "all except 3").
 | ChatGPT | Files outside the sandbox, shared links, connector changes, commands you ran locally |
 | Codex | Untracked files, temporary branches, worktrees and stashes, sandbox processes |
 
-## Install
+## Install with Claude Code
 
-See the [main README](../README.md#install). The skill itself is [`skills/session-clean-up/SKILL.md`](../skills/session-clean-up/SKILL.md).
+Paste this [deep link](https://code.claude.com/docs/en/deep-links) into your browser's address bar (Claude Code v2.1.91 or later). Claude Code opens with an install prompt already typed in; read it, then press Enter.
+
+```text
+claude-cli://open?q=Install%20the%20session-clean-up%20skill%20from%20https%3A%2F%2Fgithub.com%2Fmcalapurge%2Fagent-skills%20into%20my%20Claude%20Code%20skills%3A%20download%20skills%2Fsession-clean-up%2FSKILL.md%20from%20the%20main%20branch%20into%20~%2F.claude%2Fskills%2Fsession-clean-up%2FSKILL.md%20%28create%20the%20folder%20if%20needed%2C%20and%20ask%20before%20overwriting%20an%20existing%20copy%29.%20Then%20confirm%20it%20is%20installed.
+```
+
+Or on macOS:
+
+```sh
+open "claude-cli://open?q=Install%20the%20session-clean-up%20skill%20from%20https%3A%2F%2Fgithub.com%2Fmcalapurge%2Fagent-skills%20into%20my%20Claude%20Code%20skills%3A%20download%20skills%2Fsession-clean-up%2FSKILL.md%20from%20the%20main%20branch%20into%20~%2F.claude%2Fskills%2Fsession-clean-up%2FSKILL.md%20%28create%20the%20folder%20if%20needed%2C%20and%20ask%20before%20overwriting%20an%20existing%20copy%29.%20Then%20confirm%20it%20is%20installed."
+```
+
+The prompt asks Claude to:
+
+> Install the session-clean-up skill from https://github.com/mcalapurge/agent-skills into my Claude Code skills: download skills/session-clean-up/SKILL.md from the main branch into ~/.claude/skills/session-clean-up/SKILL.md (create the folder if needed, and ask before overwriting an existing copy). Then confirm it is installed.
+
+For Codex, the Claude app and ChatGPT, see [Install](../README.md#install) in the main README. The skill itself is [`skills/session-clean-up/SKILL.md`](../skills/session-clean-up/SKILL.md).
