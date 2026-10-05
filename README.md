@@ -6,7 +6,7 @@ Portable [Agent Skills](https://agentskills.io) (`SKILL.md` folders) that work i
 
 | Skill | What it does |
 |---|---|
-| [session-clean-up](skills/session-clean-up/SKILL.md) | Audits what an agent left behind after a diagnostic or debugging session (temp files, captures, background processes, daemons, one-off installs, device changes, published links), presents a numbered clean-up list, and removes only what you approve. |
+| [session-clean-up](docs/session-clean-up.md) ([SKILL.md](skills/session-clean-up/SKILL.md)) | Audits what an agent left behind after a diagnostic or debugging session (temp files, captures, background processes, daemons, one-off installs, device changes, published links), presents a numbered clean-up list, and removes only what you approve. |
 
 ## Install
 
@@ -27,3 +27,7 @@ Zip the skill folder and upload it where your app accepts custom skills (in the 
 ```sh
 cd agent-skills/skills && zip -r session-clean-up.zip session-clean-up
 ```
+
+## Licence
+
+[MIT](LICENSE)
