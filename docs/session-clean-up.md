@@ -62,20 +62,31 @@ Reply with which numbers to remove ("all", "1-4", "all except 3").
 
 ## Install with Claude Code
 
-Paste this [deep link](https://code.claude.com/docs/en/deep-links) into your browser's address bar (Claude Code v2.1.91 or later). Claude Code opens with an install prompt already typed in; read it, then press Enter.
+Install it as a plugin from this repo's marketplace:
+
+```
+/plugin marketplace add mcalapurge/agent-skills
+/plugin install session-clean-up@nekaiko-skills
+```
+
+Run it with `/session-clean-up:session-clean-up`, or let Claude pick it up when you're wrapping up a session.
+
+### One-click deep link
+
+Paste this [deep link](https://code.claude.com/docs/en/deep-links) into your browser's address bar (Claude Code v2.1.91 or later). Claude Code opens with the install prompt already typed; read it, then press Enter.
 
 ```text
-claude-cli://open?q=Install%20the%20session-clean-up%20skill%20from%20https%3A%2F%2Fgithub.com%2Fmcalapurge%2Fagent-skills%20into%20my%20Claude%20Code%20skills%3A%20download%20skills%2Fsession-clean-up%2FSKILL.md%20from%20the%20main%20branch%20into%20~%2F.claude%2Fskills%2Fsession-clean-up%2FSKILL.md%20%28create%20the%20folder%20if%20needed%2C%20and%20ask%20before%20overwriting%20an%20existing%20copy%29.%20Then%20confirm%20it%20is%20installed.
+claude-cli://open?q=Install%20the%20session-clean-up%20skill%20as%20a%20Claude%20Code%20plugin%3A%20run%20%60claude%20plugin%20marketplace%20add%20mcalapurge%2Fagent-skills%60%20%28skip%20if%20the%20nekaiko-skills%20marketplace%20is%20already%20added%29%2C%20then%20%60claude%20plugin%20install%20session-clean-up%40nekaiko-skills%60.%20Then%20confirm%20it%20is%20installed%20and%20tell%20me%20to%20restart%20Claude%20Code%20or%20run%20%2Freload-plugins.
 ```
 
 Or on macOS:
 
 ```sh
-open "claude-cli://open?q=Install%20the%20session-clean-up%20skill%20from%20https%3A%2F%2Fgithub.com%2Fmcalapurge%2Fagent-skills%20into%20my%20Claude%20Code%20skills%3A%20download%20skills%2Fsession-clean-up%2FSKILL.md%20from%20the%20main%20branch%20into%20~%2F.claude%2Fskills%2Fsession-clean-up%2FSKILL.md%20%28create%20the%20folder%20if%20needed%2C%20and%20ask%20before%20overwriting%20an%20existing%20copy%29.%20Then%20confirm%20it%20is%20installed."
+open "claude-cli://open?q=Install%20the%20session-clean-up%20skill%20as%20a%20Claude%20Code%20plugin%3A%20run%20%60claude%20plugin%20marketplace%20add%20mcalapurge%2Fagent-skills%60%20%28skip%20if%20the%20nekaiko-skills%20marketplace%20is%20already%20added%29%2C%20then%20%60claude%20plugin%20install%20session-clean-up%40nekaiko-skills%60.%20Then%20confirm%20it%20is%20installed%20and%20tell%20me%20to%20restart%20Claude%20Code%20or%20run%20%2Freload-plugins."
 ```
 
 The prompt asks Claude to:
 
-> Install the session-clean-up skill from https://github.com/mcalapurge/agent-skills into my Claude Code skills: download skills/session-clean-up/SKILL.md from the main branch into ~/.claude/skills/session-clean-up/SKILL.md (create the folder if needed, and ask before overwriting an existing copy). Then confirm it is installed.
+> Install the session-clean-up skill as a Claude Code plugin: run `claude plugin marketplace add mcalapurge/agent-skills` (skip if the nekaiko-skills marketplace is already added), then `claude plugin install session-clean-up@nekaiko-skills`. Then confirm it is installed and tell me to restart Claude Code or run /reload-plugins.
 
-For Codex, the Claude app and ChatGPT, see [Install](../README.md#install) in the main README. The skill itself is [`skills/session-clean-up/SKILL.md`](../skills/session-clean-up/SKILL.md).
+For Codex, the Claude app and ChatGPT, see [Install](../README.md#other-agents-manual-copy) in the main README. The skill itself is [`skills/session-clean-up/SKILL.md`](../skills/session-clean-up/SKILL.md).

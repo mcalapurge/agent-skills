@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "nekaiko-skills",
+  "description": "Portable agent skills from github.com/mcalapurge/agent-skills. Each skill installs as its own plugin.",
+  "owner": {
+    "name": "Nekaiko",
+    "url": "https://github.com/mcalapurge"
+  },
+  "plugins": [
+    {
+      "name": "session-clean-up",
+      "source": "./",
+      "skills": ["./skills/session-clean-up"],
+      "description": "Audit what an agent left behind after a diagnostic or debugging session and remove only what you approve.",
+      "version": "1.0.0",
+      "license": "MIT",
+      "repository": "https://github.com/mcalapurge/agent-skills",
+      "homepage": "https://github.com/mcalapurge/agent-skills/blob/main/docs/session-clean-up.md",
+      "keywords": ["cleanup", "debugging", "diagnostics", "housekeeping"],
+      "category": "productivity"
+    }
+  ]
+}
